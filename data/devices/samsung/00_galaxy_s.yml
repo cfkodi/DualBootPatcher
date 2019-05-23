@@ -1135,7 +1135,7 @@
   boot_ui:
     supported: true
     flags:
-      - TW_GRAPHICS_FORCE_USE_LINELENGTH
+      - TW_HAS_DOWNLOAD_MODEl
     brightness_path: /sys/class/backlight/panel/brightness
     max_brightness: 255
     default_brightness: 168
