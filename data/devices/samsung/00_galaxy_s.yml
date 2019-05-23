@@ -1072,7 +1072,6 @@
     pixel_format: RGBX_8888
     theme: portrait_hdpi
     
-    
 - name: samsung SM-G960F
   id: starlte
   codenames:
