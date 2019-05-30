@@ -22,3 +22,6 @@
 [submodule "external/outcome"]
 	path = external/outcome
 	url = https://github.com/cfkodi/outcome.git
+	branch = 7d6f5c70660728d71b05cddda14aa3c66b3b1944
+	fetchRecurseSubmodules = false
+	ignore = untracked
