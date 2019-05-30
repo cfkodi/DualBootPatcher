@@ -1071,12 +1071,14 @@
     default_brightness: 15000
     pixel_format: RGBX_8888
     theme: portrait_hdpi
-    
-- name: samsung SM-G960F
+
+- name: Samsung Galaxy S9
   id: starlte
   codenames:
       - SM-G960F
       - starlte
+      - star2lte
+      - starltexx
   architecture: arm64-v8a
   block_devs:
     base_dirs:
@@ -1135,11 +1137,11 @@
   boot_ui:
     supported: true
     flags:
-      - TW_HAS_DOWNLOAD_MODEl
-    brightness_path: /sys/class/backlight/panel/brightness
-    max_brightness: 255
-    default_brightness: 168
-    pixel_format: BGRA_8888
+      - TW_HAS_DOWNLOAD_MODE
     graphics_backends:
       - fbdev
+    brightness_path: /sys/class/backlight/panel/brightness
+    max_brightness: 36600
+    default_brightness: 12800
+    pixel_format: ABGR_8888
     theme: portrait_hdpi
