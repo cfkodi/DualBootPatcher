@@ -6,7 +6,7 @@
 	url = https://github.com/chenxiaolong/Android-Terminal-Emulator.git
 [submodule "external/flatbuffers"]
 	path = external/flatbuffers
-	url = https://github.com/google/flatbuffers.git
+	url = https://github.com/cfkodi/flatbuffers.git
 [submodule "external/minizip"]
 	path = external/minizip
 	url = https://github.com/chenxiaolong/minizip.git
@@ -15,7 +15,7 @@
 	url = https://github.com/cfkodi/RootShell.git
 [submodule "external/googletest"]
 	path = external/googletest
-	url = https://github.com/cfkodi/googletest
+	url = https://github.com/cfkodi/googletest.git
 [submodule "external/rapidjson"]
 	path = external/rapidjson
 	url = https://github.com/Tencent/rapidjson.git
