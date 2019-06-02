@@ -21,7 +21,6 @@
 	url = https://github.com/Tencent/rapidjson.git
 [submodule "external/outcome"]
 	path = external/outcome
-	url = https://github.com/cfkodi/outcome.git
-	branch = develop
+	url = https://github.com/chenxiaolong/outcome.git 
 	fetchRecurseSubmodules = true
 	ignore = none
