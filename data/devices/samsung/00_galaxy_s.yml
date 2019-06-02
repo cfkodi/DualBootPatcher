@@ -1137,11 +1137,12 @@
   boot_ui:
     supported: true
     flags:
-      - TW_HAS_DOWNLOAD_MODE
+    - TW_GRAPHICS_FORCE_USE_LINELENGTH
     graphics_backends:
-      - fbdev
+    - fbdev
     brightness_path: /sys/class/backlight/panel/brightness
-    max_brightness: 36600
-    default_brightness: 12800
+    max_brightness: 255
+    default_brightness: 168
+    cpu_temp_path: /sys/devices/virtual/thermal/thermal_zone0/temp
     pixel_format: ABGR_8888
     theme: portrait_hdpi
