@@ -6,8 +6,8 @@ services:
 before_install:
   # Clone DualBootPatcher Repository
   - git clone https://github.com/cfkodi/DualBootPatcher.git ${TRAVIS_BUILD_DIR}/DualBootPatcher/
-  - cd DualBootPatcher
-  - git submodule update --init
+  - cd ${TRAVIS_BUILD_DIR}/DualBootPatcher/
+  - git submodule foreach --recursive git submodule update --init
   # Pull docker images
   - docker pull yshalsager/dualbootpatcher:9.3.0-7-base
   - docker pull yshalsager/dualbootpatcher:9.3.0-7-android
