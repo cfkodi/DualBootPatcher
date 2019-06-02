@@ -5,7 +5,7 @@ services:
 
 before_install:
   # Clone DualBootPatcher Repository
-  - git clone https://github.com/chenxiaolong/DualBootPatcher.git ${TRAVIS_BUILD_DIR}/DualBootPatcher/
+  - git clone https://github.com/cfkodi/DualBootPatcher.git ${TRAVIS_BUILD_DIR}/DualBootPatcher/
   - cd DualBootPatcher
   - git submodule update --init
   # Pull docker images
