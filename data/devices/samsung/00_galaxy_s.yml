@@ -1072,68 +1072,55 @@
     pixel_format: RGBX_8888
     theme: portrait_hdpi
 
-- name: Samsung Galaxy S9
+- name: Samsung Galaxy S9/S9+ (Exynos)
   id: starlte
   codenames:
-      - SM-G960F
-      - starlte
-      - star2lte
-      - starltexx
+    # Regular variant
+    - SM-G960F
+    - SM-G960N
+    - starlte
+    - starltexx
+    - starlteks
+    # Plus variant
+    - SM-G965F
+    - SM-G965N
+    - star2lte
+    - star2ltexx
+    - star2lteks
   architecture: arm64-v8a
+
   block_devs:
     base_dirs:
-      - /dev/block/platform/11120000.ufs/by-num
+      - /dev/block/bootdevice/by-name
+      - /dev/block/platform/11120000.ufs/by-name
     system:
+      - /dev/block/bootdevice/by-name/SYSTEM
       - /dev/block/platform/11120000.ufs/by-name/SYSTEM
       - /dev/block/sda18
     cache:
+      - /dev/block/bootdevice/by-name/CACHE
       - /dev/block/platform/11120000.ufs/by-name/CACHE
       - /dev/block/sda21
     data:
+      - /dev/block/bootdevice/by-name/USERDATA
       - /dev/block/platform/11120000.ufs/by-name/USERDATA
       - /dev/block/sda25
     boot:
+      - /dev/block/bootdevice/by-name/BOOT
       - /dev/block/platform/11120000.ufs/by-name/BOOT
       - /dev/block/sda10
     recovery:
+      - /dev/block/bootdevice/by-name/RECOVERY
       - /dev/block/platform/11120000.ufs/by-name/RECOVERY
       - /dev/block/sda11
     extra:
-      - /dev/block/mmcblk0p1
-      - /dev/block/platform/11120000.ufs/by-name/EFS
-      - /dev/block/platform/11120000.ufs/by-name/HIDDEN
-      - /dev/block/platform/11120000.ufs/by-name/MISC
-      - /dev/block/platform/11120000.ufs/by-name/ODM
+      - /dev/block/bootdevice/by-name/RADIO
       - /dev/block/platform/11120000.ufs/by-name/RADIO
+      - /dev/block/sda12
+      - /dev/block/bootdevice/by-name/VENDOR
       - /dev/block/platform/11120000.ufs/by-name/VENDOR
-      - /dev/block/platform/11120000.ufs/by-num/p1
-      - /dev/block/platform/11120000.ufs/by-num/p10
-      - /dev/block/platform/11120000.ufs/by-num/p11
-      - /dev/block/platform/11120000.ufs/by-num/p12
-      - /dev/block/platform/11120000.ufs/by-num/p13
-      - /dev/block/platform/11120000.ufs/by-num/p14
-      - /dev/block/platform/11120000.ufs/by-num/p15
-      - /dev/block/platform/11120000.ufs/by-num/p16
-      - /dev/block/platform/11120000.ufs/by-num/p17
-      - /dev/block/platform/11120000.ufs/by-num/p18
-      - /dev/block/platform/11120000.ufs/by-num/p19
-      - /dev/block/platform/11120000.ufs/by-num/p2
-      - /dev/block/platform/11120000.ufs/by-num/p20
-      - /dev/block/platform/11120000.ufs/by-num/p21
-      - /dev/block/platform/11120000.ufs/by-num/p22
-      - /dev/block/platform/11120000.ufs/by-num/p23
-      - /dev/block/platform/11120000.ufs/by-num/p24
-      - /dev/block/platform/11120000.ufs/by-num/p25
-      - /dev/block/platform/11120000.ufs/by-num/p3
-      - /dev/block/platform/11120000.ufs/by-num/p4
-      - /dev/block/platform/11120000.ufs/by-num/p5
-      - /dev/block/platform/11120000.ufs/by-num/p6
-      - /dev/block/platform/11120000.ufs/by-num/p7
-      - /dev/block/platform/11120000.ufs/by-num/p8
-      - /dev/block/platform/11120000.ufs/by-num/p9
-      - /dev/block/mmcblk1
-      - /dev/block/mmcblk1p1
- 
+      - /dev/block/sda19
+
   boot_ui:
     supported: true
     flags:
