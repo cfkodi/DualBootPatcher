@@ -9,6 +9,7 @@ before_install:
     make dev
   - git clone https://github.com/cfkodi/DualBootPatcher.git ${TRAVIS_BUILD_DIR}/DualBootPatcher/
   - cd ${TRAVIS_BUILD_DIR}/DualBootPatcher/docker
+  - git submodule update --init
   - ./generate.sh
   - ./build.sh
   - cd ${TRAVIS_BUILD_DIR}/DualBootPatcher/
